@@ -52,7 +52,6 @@ body {
   transform: translateX(-0vw);
   height: 100vh;
   /* transform: translateY(-21vh); */
-  border: 3px solid red;
 }
 .inside_relative {
   width: 98%;
