@@ -13,13 +13,13 @@ body {
   width: 100%;
   height: 150vw;
   background-color: #292f2b;
-  position: static;
+  position: relative;
 }
 
 .outside_relative {
   position: sticky;
-  height: 80vw;
-  overflow-y: clip;
+  height: 47vw;
+  /* overflow-y: clip; */
   top: 0px;
 }
 
