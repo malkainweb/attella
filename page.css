@@ -65,16 +65,15 @@ body {
   width: 100%;
   top: 0vw;
   height: 100vh;
-  transition: 2s ease;
   overflow-y: hidden;
   transform: translateY(-100vh);
-  transition: 2s ease;
+  transition: 2.5s ease;
 }
 
-.goup1 {
+/* .goup1 {
   transform: translateY(0vh);
-  transition: 2s ease;
-}
+  transition: 2.5s ease;
+} */
 
 .relative2 {
   position: absolute;
@@ -82,7 +81,7 @@ body {
   top: 0vw;
   width: 100%;
   height: 100vh;
-  transition: 2s ease;
+  transition: 2.5s ease;
   transform: translateY(200vh);
   overflow-y: hidden;
   /* margin-bottom: 10px; */
