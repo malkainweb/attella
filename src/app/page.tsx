@@ -10,15 +10,15 @@ export default function Home() {
   const [loader, setloader] = useState(true);
   const [beginlines, setbeginlines] = useState(true);
 
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setloader(false);
-  //     document.body.classList.remove("hide_now");
-  //     // console.log("i am waing ");
-  //   }, 4500);
-  //   return () => clearTimeout(timer);
-  //   // eslint-disable-next-line react-hooks/exhaustive-deps
-  // }, []);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setloader(false);
+      document.body.classList.remove("hide_now");
+      // console.log("i am waing ");
+    }, 4500);
+    return () => clearTimeout(timer);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <>

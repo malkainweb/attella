@@ -3,7 +3,7 @@ import React from "react";
 const Home_inside = () => {
   return (
     <>
-      <div className="w-full h-[100vh] flex justify-center items-center bg-blue-600 text-[5vw] font-bold uppercase">
+      <div className="w-full h-[100vh] flex justify-center items-center bg-[#1a1919] text-red-300 text-[5vw] font-bold uppercase">
         this is the first homepage
       </div>{" "}
       <div className="w-full h-[100vh] flex justify-center items-center bg-red-600 text-white text-[5vw] font-bold uppercase">

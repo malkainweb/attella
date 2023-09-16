@@ -33,7 +33,7 @@ body {
   border-left: 80vw solid transparent;
   border-right: 80vw solid transparent;
   rotate: 135deg;
-  border-bottom: 200vh solid #1a1919;
+  border-bottom: 200vh solid black;
 }
 .triangle2 {
   width: 0;
@@ -41,7 +41,7 @@ body {
   border-left: 80vw solid transparent;
   border-right: 80vw solid transparent;
   rotate: -45deg;
-  border-bottom: 200vh solid #1a1919;
+  border-bottom: 200vh solid black;
 }
 
 @media only screen and (max-width: 650px) {
@@ -51,7 +51,7 @@ body {
     border-left: 110vw solid transparent;
     border-right: 110vw solid transparent;
     rotate: 135deg;
-    border-bottom: 220vh solid #1a1919;
+    border-bottom: 220vh solid black;
   }
   .triangle2 {
     width: 0;
@@ -61,6 +61,6 @@ body {
     border-right: 110vw solid transparent;
 
     rotate: -45deg;
-    border-bottom: 220vh solid #1a1919;
+    border-bottom: 220vh solid black;
   }
 }

@@ -81,6 +81,7 @@ const Preloader = (props: any) => {
           <Image
             src={preloader_logo}
             alt="preloader image"
+            priority
             className="w-full h-fit z-[9999999]"
           />
         </motion.div>
@@ -182,6 +183,7 @@ const Preloader = (props: any) => {
         >
           <Image
             src={preloader_logo}
+            priority
             alt="preloader image"
             className="w-full h-fit z-[9999999]"
           />
