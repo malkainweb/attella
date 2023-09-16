@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-appearance: none !important;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  /* overflow-x: hidden; */
+  /* contain: paint; */
+  overflow-x: clip;
+}
+
+.hide_now {
+  overflow-y: clip;
+  height: 208vh;
+}
+/* styling for the input eflements on the contact page  */
+
+.border2 {
+  border: 2px solid red;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 80vw solid transparent;
+  border-right: 80vw solid transparent;
+  rotate: 135deg;
+  border-bottom: 80vw solid #1a1919;
+}
+.triangle2 {
+  width: 0;
+  height: 0;
+  border-left: 80vw solid transparent;
+  border-right: 80vw solid transparent;
+  rotate: -45deg;
+  border-bottom: 80vw solid #1a1919;
+}
