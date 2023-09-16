@@ -47,7 +47,7 @@ const Preloader = (props: any) => {
       setscale(0.3);
       setpreloader_img_opacity(0);
       settransX1("-50vw");
-      settransY1("-150vh");
+      settransY1("-200vh");
       setbgcolor("");
       setbeginlines(false);
     }, 2700);
@@ -58,17 +58,17 @@ const Preloader = (props: any) => {
     <>
       {/* bg-[#1A1919] */}
       <div
-        className="w-full h-full  fixed top-0 flex justify-center items-center z-[999999] transition duration-[1s] "
+        className="w-full h-full  fixed top-0 flex justify-center items-center z-[999999] transition duration-[1s]  "
         style={{
           backgroundColor: bgcolor,
         }}
       >
         <div
-          className="absolute bottom-[-20vw] right-[-80vw] transition duration-[4s] border2 triangle "
+          className="absolute bottom-[-60vh] right-[-80vw] transition duration-[4s] border2 triangle "
           style={{ transform: `translate(${transX1} , ${transY1})` }}
         ></div>
         <div
-          className="absolute transition duration-[4s] top-[-20vw] left-[-80vw]  border2 triangle2   "
+          className="absolute transition duration-[4s] top-[-60vh] left-[-80vw]  border2 triangle2   "
           style={{ transform: `translate(${transX1} , ${transY1})` }}
         ></div>
         <motion.div
@@ -104,7 +104,7 @@ const Preloader = (props: any) => {
           className="absolute  w-[0.2vw] transition duration-[2.3s] h-[150vh] bg-white rotate-[45deg] rounded-[10vw]"
           style={{
             top: 0,
-            left: "15vw",
+            left: "15vh",
             transform: `translateY(${trans2})`,
             rotate: "45deg",
             opacity: line_opacity,
@@ -116,7 +116,7 @@ const Preloader = (props: any) => {
           className="absolute  w-[0.2vw] transition duration-[2.3s] h-[150vh] bg-white rotate-[45deg] rounded-[10vw]"
           style={{
             bottom: 0,
-            right: "15vw",
+            right: "15vh",
             transform: `translateY(${trans3})`,
             rotate: "45deg",
             opacity: line_opacity,

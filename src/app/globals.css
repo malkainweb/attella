@@ -33,7 +33,7 @@ body {
   border-left: 80vw solid transparent;
   border-right: 80vw solid transparent;
   rotate: 135deg;
-  border-bottom: 80vw solid #1a1919;
+  border-bottom: 180vh solid #1a1919;
 }
 .triangle2 {
   width: 0;
@@ -41,5 +41,5 @@ body {
   border-left: 80vw solid transparent;
   border-right: 80vw solid transparent;
   rotate: -45deg;
-  border-bottom: 80vw solid #1a1919;
+  border-bottom: 180vh solid #1a1919;
 }
