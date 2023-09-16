@@ -58,7 +58,7 @@ const Preloader = (props: any) => {
     <>
       {/* bg-[#1A1919] */}
       <div
-        className="w-full h-full  fixed top-0 flex justify-center items-center z-[999999] transition duration-[1s]  "
+        className="w-full h-full  fixed top-0 flex justify-center items-center z-[999999] transition duration-[1s] sm:hidden "
         style={{
           backgroundColor: bgcolor,
         }}
@@ -152,6 +152,108 @@ const Preloader = (props: any) => {
           style={{
             bottom: 0,
             right: "30vw",
+            transform: `translateY(${trans5})`,
+            opacity: line_opacity,
+          }}
+        ></div>
+      </div>
+
+      {/* this is for mobile screens */}
+      <div
+        className="w-full h-full  fixed top-0 sm:flex justify-center items-center z-[999999] transition duration-[1s] hidden "
+        style={{
+          backgroundColor: bgcolor,
+        }}
+      >
+        <div
+          className="absolute bottom-[-140vh] right-[-200vw] transition duration-[4s] border2 triangle "
+          style={{ transform: `translate(${transX1} , ${transY1})` }}
+        ></div>
+        <div
+          className="absolute transition duration-[4s] top-[-140vh] left-[-200vw]  border2 triangle2   "
+          style={{ transform: `translate(${transX1} , ${transY1})` }}
+        ></div>
+        <motion.div
+          // initial={{ scale: 1.5 }}
+          // animate={{ width: "10vw", height: "10vw", scale: 0.7 }}
+          // transition={{ duration: 5 }}
+          className={`  w-[50vw] transition duration-[3s] h-auto`}
+          style={{ scale: scale, opacity: preloader_img_opacity }}
+        >
+          <Image
+            src={preloader_logo}
+            alt="preloader image"
+            className="w-full h-fit z-[9999999]"
+          />
+        </motion.div>
+
+        {/* for the two traingles that would fade away */}
+
+        {/* for the relative boxes  */}
+        <div
+          className="absolute  w-[0.5vw] transition duration-[2.3s] h-[80vh] bg-white rotate-[45deg] rounded-[10vw]"
+          style={{
+            top: 0,
+            left: "-20vw",
+            transform: `translateY(${trans1})`,
+            rotate: "45deg",
+            opacity: line_opacity,
+          }}
+        ></div>
+
+        {/* second relative boxes */}
+        <div
+          className="absolute  w-[0.5vw] transition duration-[2.3s] h-[150vh] bg-white rotate-[45deg] rounded-[10vw]"
+          style={{
+            top: 0,
+            left: "15vh",
+            transform: `translateY(${trans2})`,
+            rotate: "45deg",
+            opacity: line_opacity,
+          }}
+        ></div>
+
+        {/* third relative boxes */}
+        <div
+          className="absolute  w-[0.5vw] transition duration-[2.3s] h-[150vh] bg-white rotate-[45deg] rounded-[10vw]"
+          style={{
+            bottom: 0,
+            right: "15vh",
+            transform: `translateY(${trans3})`,
+            rotate: "45deg",
+            opacity: line_opacity,
+          }}
+        ></div>
+
+        {/* fourth relative boxes */}
+        <div
+          className="absolute  w-[0.5vw] transition duration-[2.3s] h-[80vh] bg-white rotate-[45deg] rounded-[10vw]"
+          style={{
+            bottom: 0,
+            right: "-20vw",
+            transform: `translateY(${trans4})`,
+            rotate: "45deg",
+            opacity: line_opacity,
+          }}
+        ></div>
+
+        {/* fiveth striaght lines now  boxes */}
+        <div
+          className="absolute  w-[0.5vw] transition duration-[2.3s] h-[100vh] bg-white rotate-[45deg] rounded-[10vw]"
+          style={{
+            bottom: 0,
+            left: "20vw",
+            transform: `translateY(${trans5})`,
+            opacity: line_opacity,
+          }}
+        ></div>
+
+        {/* sixth striaght lines now  boxes */}
+        <div
+          className="absolute  w-[0.5vw] transition duration-[2.3s] h-[100vh] bg-white rotate-[45deg] rounded-[10vw]"
+          style={{
+            bottom: 0,
+            right: "20vw",
             transform: `translateY(${trans5})`,
             opacity: line_opacity,
           }}
