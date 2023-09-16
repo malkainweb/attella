@@ -27,7 +27,7 @@ const Preloader = (props: any) => {
   const [trans5, settrans5] = useState("100vh");
   const [transX1, settransX1] = useState("0vw");
   const [transY1, settransY1] = useState("0vh");
-  const [bgcolor, setbgcolor] = useState("#1a1919");
+  const [bgcolor, setbgcolor] = useState("black");
 
   useEffect(() => {
     setscale(0.8);
@@ -53,12 +53,18 @@ const Preloader = (props: any) => {
     }, 2700);
     return () => clearTimeout(timer);
   }, [trans5]);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setline_opacity(0);
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, [trans5]);
 
   return (
     <>
       {/* bg-[#1A1919] */}
       <div
-        className="w-full h-full  fixed top-0 flex justify-center items-center z-[999999] transition duration-[1s] sm:hidden "
+        className="w-full h-full  fixed top-0 flex justify-center items-center z-[999999] transition duration-[2s] sm:hidden "
         style={{
           backgroundColor: bgcolor,
         }}
@@ -161,7 +167,7 @@ const Preloader = (props: any) => {
 
       {/* this is for mobile screens */}
       <div
-        className="w-full h-full  fixed top-0 sm:flex justify-center items-center z-[999999] transition duration-[1s] hidden "
+        className="w-full h-full  fixed top-0 sm:flex justify-center items-center z-[999999] transition duration-[2s] hidden "
         style={{
           backgroundColor: bgcolor,
         }}
